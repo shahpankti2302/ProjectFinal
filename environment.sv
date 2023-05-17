@@ -10,11 +10,11 @@ class environment;
   monitor mon;
   scoreboard scb;
   
-  mailbox gen2drv;
+  mailbox gen2drv,drv2gen;
   mailbox mon2scb,drv2scr;
 
   
-  event drv2gen;//to show generation of signals have stopped
+  //event drv2gen;//to show generation of signals have stopped
   virtual fifo_intf vif_fifo;
   
   function new(virtual fifo_intf vif_fifo);
