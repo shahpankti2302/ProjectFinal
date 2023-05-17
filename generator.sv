@@ -15,10 +15,10 @@ class generator;
   
   task main();
    repeat(repeat_count)begin 
-    trans_gen = new();
+    this.trans_gen = new();
     if(!trans_gen.randomize()) $fatal("Gen::trans randomization failed"); 
-     gen2drv.put(trans_gen);
-     drv2gen.get(trans_gen);
+    this.gen2drv.put(trans_gen);
+     this.drv2gen.get(trans_gen);
    end 
   endtask
 
