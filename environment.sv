@@ -22,6 +22,7 @@ class environment;
     gen2drv = new();
     mon2scb = new();
     drv2scr=new();
+    drv2gen=new();
     gen = new(gen2drv,drv2gen);
     drv = new(vif_fifo,gen2drv,drv2scr);
     mon = new(vif_fifo,mon2scb);
